@@ -1,0 +1,166 @@
+/* 基础重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #121212; /* 深色背景 */
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* 头部区域 */
+.hero {
+    background: linear-gradient(135deg, #1f1f1f 0%, #121212 100%);
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 3px solid #4ade80; /* Spirit 标志性亮绿 */
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px; /* 改用圆角矩形，更有电竞海报感 */
+    object-fit: cover;
+    border: 3px solid #4ade80;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.3); /* 绿色发光效果 */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #a0a0a0;
+    margin-bottom: 20px;
+}
+
+/* 徽章标签 */
+.hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background-color: rgba(74, 222, 128, 0.1);
+    color: #4ade80;
+    border: 1px solid #4ade80;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* 主体内容 */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    border-left: 5px solid #4ade80; /* 左侧绿色线条 */
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+/* 简介文字 */
+.about-section p {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* 数据版块 (Grid 布局) */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: 3px solid #4ade80;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    background-color: #252525;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: #4ade80;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 高光时刻画廊 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.work-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.work-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #333;
+}
+
+.work-card h3 {
+    padding: 15px 20px 5px;
+    color: #fff;
+}
+
+.work-card p {
+    padding: 0 20px 20px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0a0a0a;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
